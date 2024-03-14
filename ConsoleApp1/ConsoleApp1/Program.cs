@@ -9,7 +9,6 @@ class Program
         double average = CalculateAverage(numbers);
         Console.WriteLine("Sum: " + sum);
         Console.WriteLine("Average: " + average);
-
     }
 
     static double CalculateAverage(int[] numbers)
@@ -25,9 +24,9 @@ class Program
     static double GetSum(int[] numbers)
     {
         double sum = 0.0;
-        foreach (var number in numbers)
+        for (int i = 0; i < numbers.Length; i++)
         {
-            sum += number;
+            sum += numbers[i];
         }
         return sum;
     }
@@ -44,5 +43,4 @@ class Program
         }
         return max;
     }
-
 }
