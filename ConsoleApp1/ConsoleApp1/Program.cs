@@ -18,9 +18,10 @@ class Program
         {
             sum += number;
         }
+
         return sum / numbers.Length;
     }
-    
+
     static double GetSum(int[] numbers)
     {
         double sum = 0.0;
@@ -30,7 +31,7 @@ class Program
         }
         return sum;
     }
-    
+
     static int GetMaxValue(int[] numbers)
     {
         int max = numbers[0];
@@ -41,6 +42,7 @@ class Program
                 max = number;
             }
         }
+
         return max;
     }
 }
