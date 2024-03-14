@@ -6,13 +6,13 @@ class Program
     {
         int[] numbers = { 1, 2, 3, 4, 5, 6, 7 };
         double sum = GetSum(numbers);
-        double average = sum / numbers.Length;
+        double average = CalculateAverage(numbers);
         Console.WriteLine("Sum: " + sum);
         Console.WriteLine("Average: " + average);
 
     }
 
-    static double GetAverage(int[] numbers)
+    static double CalculateAverage(int[] numbers)
     {
         double sum = 0.0;
         foreach (var number in numbers)
@@ -31,7 +31,4 @@ class Program
         }
         return sum;
     }
-
-  
-
 }
