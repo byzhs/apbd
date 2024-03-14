@@ -25,9 +25,9 @@ class Program
     static double GetSum(int[] numbers)
     {
         double sum = 0.0;
-        foreach (var element in numbers)
+        foreach (var value in numbers) // Changed variable name from 'element' to 'value'
         {
-            sum += element;
+            sum += value;
         }
         return sum;
     }
