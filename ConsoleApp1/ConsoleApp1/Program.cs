@@ -5,8 +5,10 @@ class Program
     static void Main(string[] args)
     {
         int[] numbers = { 1, 2, 3, 4, 5, 6, 7 };
-        double average = GetAverage(numbers);
-        Console.WriteLine(average);
+        double sum = GetSum(numbers);
+        double average = sum / numbers.Length;
+        Console.WriteLine("Sum: " + sum);
+        Console.WriteLine("Average: " + average);
 
     }
 
