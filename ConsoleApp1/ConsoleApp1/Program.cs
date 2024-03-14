@@ -20,6 +20,16 @@ class Program
         return sum / numbers.Length;
     }
     
+    static double GetSum(int[] numbers)
+    {
+        double sum = 0.0;
+        foreach (var number in numbers)
+        {
+            sum += number;
+        }
+        return sum;
+    }
+
   
 
 }
